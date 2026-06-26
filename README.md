@@ -113,7 +113,3 @@ npm run merge
 | `npm run merge` | Merge scraped JSON files into corpus |
 
 ---
-
-## 📄 License
-
-ISC
