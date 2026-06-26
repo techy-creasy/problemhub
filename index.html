@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧩</text></svg>"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ProblemHub</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Find DSA Problems Instantly</h1>
+        <p class="tagline">
+          Search coding challenges across
+          <img
+            src="assets/logos/codeforces.png"
+            alt="Codeforces"
+            class="platform-icon"
+          />
+          <img
+            src="assets/logos/codechef.png"
+            alt="CodeChef"
+            class="platform-icon"
+          />
+          <img
+            src="assets/logos/leetcode.png"
+            alt="LeetCode"
+            class="platform-icon"
+          />
+          — all in one place.
+        </p>
+      </div>
+
+      <form class="search-form" id="search-form">
+        <input
+          id="query-input"
+          class="query-input"
+          type="text"
+          placeholder="Search by topic, tag, or title..."
+          autocomplete="off"
+        />
+        <button type="submit">Find</button>
+      </form>
+
+      <p class="cta">Start typing above to discover your next challenge.</p>
+
+      <div id="spinner" class="spinner hidden" aria-hidden="true"></div>
+
+      <div id="results" class="results"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
